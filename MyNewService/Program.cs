@@ -12,12 +12,12 @@ namespace MyNewService
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
-        static void Main()
+        static void Main(string[] args)
         {
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new Service1()
+                new MyNewService(args)
             };
             ServiceBase.Run(ServicesToRun);
         }
